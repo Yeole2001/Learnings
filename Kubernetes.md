@@ -1,4 +1,4 @@
-# Kubernetes #
+# Kubernetes Concepts #
 --------------
 
 ## Imperative and Declrative for Kubectl Commands
@@ -26,3 +26,27 @@ Declarative = You define the goal: "I want it like this."
 | `replace`         | Imperative   | ❌ Error                  | Deletes and recreates       | Risky – must specify full config             |
 
 -------------------------
+
+
+# Kubernetes Commands #
+--------------
+
+* Get all the resources
+
+#kubectl get all
+
+* To get Kubernetes Objects/Resources
+
+#kubectl get pods/namespaces(ns)/nodes
+
+* List recent events in the default namespace
+
+#kubectl events
+
+* To watch on pods
+  
+#watch “kubectl get pod -A -o wide”
+
+
+
+
